@@ -99,7 +99,7 @@ const Login = () => {
 
                 <div style={{ textAlign: 'center' }}>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
-                        {/* New Developer? <span style={{ color: 'var(--primary)', cursor: 'pointer', fontWeight: '600' }} onClick={() => navigate('/register')}>Register here</span> */}
+                        New Developer? <span style={{ color: 'var(--primary)', cursor: 'pointer', fontWeight: '600' }} onClick={() => navigate('/register')}>Register here</span>
                     </p>
                 </div>
             </div>

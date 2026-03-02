@@ -444,7 +444,7 @@ const DocTile = ({ label, path, color }) => (
         transform: path ? 'none' : 'scale(0.95)'
     }}>
         {path ? (
-            <a href={`https://spms-backend-s6zu.onrender.com/${path}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href={path.startsWith('http') ? path : `https://spms-backend-s6zu.onrender.com/${path}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <File size={24} color={color} style={{ marginBottom: '10px' }} />
                 <p style={{ fontSize: '10px', fontWeight: '800', color: 'white' }}>{label}</p>
             </a>

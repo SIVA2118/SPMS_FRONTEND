@@ -263,7 +263,7 @@ const DeveloperDashboard = () => {
                                 {/* Document Upload Column */}
                                 <td style={{ padding: '15px 20px' }}>
                                     {student.documentPath ? (
-                                        <a href={`https://spms-backend-s6zu.onrender.com/${student.documentPath}`} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}><File size={16} /></a>
+                                        <a href={student.documentPath.startsWith('http') ? student.documentPath : `https://spms-backend-s6zu.onrender.com/${student.documentPath}`} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}><File size={16} /></a>
                                     ) : (
                                         <label style={{ cursor: 'pointer', color: 'rgba(255,255,255,0.2)' }}>
                                             <Upload size={16} />
@@ -275,7 +275,7 @@ const DeveloperDashboard = () => {
                                 {/* PDF Column */}
                                 <td style={{ padding: '15px 20px' }}>
                                     {student.pdfPath ? (
-                                        <a href={`https://spms-backend-s6zu.onrender.com/${student.pdfPath}`} target="_blank" rel="noopener noreferrer" style={{ color: '#ef4444' }}><File size={16} /></a>
+                                        <a href={student.pdfPath.startsWith('http') ? student.pdfPath : `https://spms-backend-s6zu.onrender.com/${student.pdfPath}`} target="_blank" rel="noopener noreferrer" style={{ color: '#ef4444' }}><File size={16} /></a>
                                     ) : (
                                         <label style={{ cursor: 'pointer', color: 'rgba(239, 68, 68, 0.2)' }}>
                                             <Upload size={16} />
@@ -287,7 +287,7 @@ const DeveloperDashboard = () => {
                                 {/* ZIP Column */}
                                 <td style={{ padding: '15px 20px' }}>
                                     {student.zipPath ? (
-                                        <a href={`https://spms-backend-s6zu.onrender.com/${student.zipPath}`} target="_blank" rel="noopener noreferrer" style={{ color: '#fbbf24' }}><File size={16} /></a>
+                                        <a href={student.zipPath.startsWith('http') ? student.zipPath : `https://spms-backend-s6zu.onrender.com/${student.zipPath}`} target="_blank" rel="noopener noreferrer" style={{ color: '#fbbf24' }}><File size={16} /></a>
                                     ) : (
                                         <label style={{ cursor: 'pointer', color: 'rgba(251, 191, 36, 0.2)' }}>
                                             <Upload size={16} />
@@ -299,7 +299,7 @@ const DeveloperDashboard = () => {
                                 {/* Video Column */}
                                 <td style={{ padding: '15px 20px' }}>
                                     {student.videoPath ? (
-                                        <a href={`https://spms-backend-s6zu.onrender.com/${student.videoPath}`} target="_blank" rel="noopener noreferrer" style={{ color: '#34d399' }}><File size={16} /></a>
+                                        <a href={student.videoPath.startsWith('http') ? student.videoPath : `https://spms-backend-s6zu.onrender.com/${student.videoPath}`} target="_blank" rel="noopener noreferrer" style={{ color: '#34d399' }}><File size={16} /></a>
                                     ) : (
                                         <label style={{ cursor: 'pointer', color: 'rgba(52, 211, 153, 0.2)' }}>
                                             <Upload size={16} />
